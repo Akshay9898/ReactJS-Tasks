@@ -8,7 +8,6 @@ function App() {
       <ImageStatus 
         name= "Akshay Sonejee"
         role = "Software Engineer"
-        joindate="2021-12-01"
         status={false}
       />
     </div>

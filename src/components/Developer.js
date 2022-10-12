@@ -9,17 +9,19 @@ import moment from 'moment';
 
 
 const ImageStatus = (props) => {
-    // return <ReactRoundedImage image={logo}/>
+
     let skill = ['Django', 'JS', 'PostGres', 'React']
     let message
-    let jdate
+    let joindate="2021-12-01"
+
     if(props.status){
         message =  <div className="online">Online</div>
     }
     else{
         message =  <div className="offline">Offline</div>
     }
-    jdate = moment(props.joindate, "YYYYMMDD").fromNow();
+    
+    let jdate = moment(joindate, "YYYYMMDD").fromNow();
 
     return(
         <div className="overlay">
@@ -33,8 +35,6 @@ const ImageStatus = (props) => {
                         <h2>{props.role}</h2><br/>
                         <h2>{String(skill)}</h2><br/>
                         <h1>{jdate}</h1>
-                        {/* <h2>01-12-2021</h2> */}
-                        {/* <h2><Moment fromNow>1976-04-19T12:59-0500</Moment></h2> */}
                     </div>
                 </div>
             </div>
