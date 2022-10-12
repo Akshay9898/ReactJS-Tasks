@@ -5,7 +5,12 @@ import ImageStatus from './components/Developer';
 function App() {
   return (
     <div className="App">
-      <ImageStatus />
+      <ImageStatus 
+        name= "Akshay Sonejee"
+        role = "Software Engineer"
+        joindate="2021-12-01"
+        status={false}
+      />
     </div>
   );
 }
